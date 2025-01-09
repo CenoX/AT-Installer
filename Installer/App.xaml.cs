@@ -54,7 +54,7 @@ public partial class App : Application
 		var args = Environment.GetCommandLineArgs();
 
 #if DEBUG
-		args = ["", "C:\\Data\\Temp\\Package.atp"];
+		args = ["", "D:\\Temp\\win-x64.atp"];
 #endif
 
 		// Compose manifest from command line argument

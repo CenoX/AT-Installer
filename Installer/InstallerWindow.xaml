@@ -56,14 +56,39 @@
                 Text="AT Installer"
                 TextTrimming="CharacterEllipsis"
                 TextWrapping="Wrap" />
-            <TextBlock
-                x:Name="TbApplicationPublisher"
-                Style="{ThemeResource BodyTextBlockStyle}"
-                Text="Author: Howon Lee" />
-            <TextBlock
-                x:Name="TbApplicationVersion"
-                Style="{ThemeResource BodyTextBlockStyle}"
-                Text="Loading..." />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Style="{ThemeResource BodyStrongTextBlockStyle}"
+                    Text="Author: "
+                    Margin="0, 0, 5, 0"
+                    />
+                <TextBlock
+                    x:Name="TbApplicationPublisher"
+                    Style="{ThemeResource BodyTextBlockStyle}"
+                    Text="Howon Lee" />                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Style="{ThemeResource BodyStrongTextBlockStyle}"
+                    Text="Version: "
+                    Margin="0, 0, 5, 0"
+                />
+                <TextBlock
+                    x:Name="TbApplicationVersion"
+                    Style="{ThemeResource BodyTextBlockStyle}"
+                    Text="Loading..." />         
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Style="{ThemeResource CaptionTextBlockStyle}"
+                    Text="Commit: "
+                    Margin="0, 0, 5, 0"
+                />
+                <TextBlock
+                    x:Name="TbCommitShaVersion"
+                    Style="{ThemeResource CaptionTextBlockStyle}"
+                    Text="Loading..." />              
+            </StackPanel>
         </StackPanel>
 
         <Frame
